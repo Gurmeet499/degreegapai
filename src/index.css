@@ -1,0 +1,44 @@
+/* Import standard Tailwind CSS base layer reset styles */
+@tailwind base;
+/* Import Tailwind component utility classes */
+@tailwind components;
+/* Import Tailwind dynamic utility classes */
+@tailwind utilities;
+
+/* Base body styling and typography */
+body {
+  /* Set base font to Plus Jakarta Sans with fallbacks */
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  /* Prevent horizontal scrolling on small viewports */
+  overflow-x: hidden;
+  /* Smooth scrolling across section transitions */
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling for modern sleek appearance */
+::-webkit-scrollbar {
+  /* Width of the custom scrollbar */
+  width: 8px;
+  /* Height of horizontal scrollbar */
+  height: 8px;
+}
+
+/* Scrollbar track styling */
+::-webkit-scrollbar-track {
+  /* Dark slate background matching the UI theme */
+  background: #0f172a;
+}
+
+/* Scrollbar draggable handle styling */
+::-webkit-scrollbar-thumb {
+  /* Subtle slate border for visibility */
+  background: #334155;
+  /* Rounded pill edges */
+  border-radius: 4px;
+}
+
+/* Hover state for scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  /* Brighter slate on user hover */
+  background: #475569;
+}
